@@ -64,5 +64,5 @@ application = Application([HomeWorkSevice],
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
     wsgi_app = WsgiApplication(application)
-    server = make_server('0.0.0.0', 8000, wsgi_app)
+    server = make_server('0.0.0.0', 80, wsgi_app)
     server.serve_forever()
